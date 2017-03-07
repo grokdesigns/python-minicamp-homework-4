@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Friend Tracker</title>
+    <title>Movie Tracker</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cerulean/bootstrap.min.css">
 </head>
 
@@ -11,18 +11,18 @@
         <div class="row">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Add Friend</h3>
+                    <h3 class="panel-title">Add Movie</h3>
                 </div>
                 <div class="panel-body">
-                    <form action="{{ url_for('newFriend') }}" method="POST">
-                        <h3>Friend Info</h3>
+                    <form action="{{ url_for('newMovie') }}" method="POST">
+                        <h3>Movie Info</h3>
                         <div class="form-group">
-                            <label for="name">Name:</label>
-                            <input type="text" class="form-control" name="name" id="name" /></br>
+                            <label for="title">Title:</label>
+                            <input type="text" class="form-control" name="title" id="title" /></br>
                         </div>
                         <div class="form-group">
-                            <label for="age">Age:</label>
-                            <input type="text" class="form-control" name="age" id="age" /></br>
+                            <label for="year">Year:</label>
+                            <input type="text" class="form-control" name="year" id="year" /></br>
                         </div>
                         <button type="submit" class="btn btn-default">Submit</button>
                     </form>
@@ -35,7 +35,7 @@
                     <h3 class="panel-title">Links</h3>
                 </div>
                 <div class="panel-body">
-                    <a href="/friends">Friend List</a>
+                    <a href="/movies">Movie List</a>
                 </div>
             </div>
         </div>
